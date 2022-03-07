@@ -63,8 +63,8 @@ fr4.grid(row=4)
 fr5.grid(row=5)
 ####
 
-add_img = PhotoImage(file="C:/Users/"+getpass.getuser()+"/Desktop/Информатик/VK message/VKmessage.gif")
-asas = PhotoImage(file="C:/Users/"+getpass.getuser()+"/Desktop/Информатик/VK message/qwas.gif")
+add_img = PhotoImage(file="VKmessage.gif")
+CheckMark = PhotoImage(file="CheckMark.gif")
 def Photo():
     label = Label(fr1, image=add_img)
     label.pack(side=TOP)
@@ -100,7 +100,7 @@ def papka():
 
     lab1 = Label(fr4, text="Создать папку на рабочем столе")
     lab1.pack(side=LEFT)
-    btn1 = Button(fr4, image=asas)
+    btn1 = Button(fr4, image=CheckMark)
     btn1.pack(side=LEFT)
     btn1.bind("<Button-1>", lambda event: createdir())
 def callpassword1():
